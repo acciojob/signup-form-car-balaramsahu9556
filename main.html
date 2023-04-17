@@ -8,43 +8,42 @@
 
 <body>
 	<form method="post">
+		<label for="name">Name*</label>
+		<input type="text" id="name" placeholder="Name" required >
 		
-			<lable for="name">Name*</lable>
-			<input type="text" id="name" placeholder="Name" required>
+		<lable for="email">Email*</lable>
+		<input type="email" id="email" placeholder="Email" required>
 		
-			<lable for="email">Email*</lable>
-			<input type="email" id="email" placeholder="Email" required>
+		<lable for="gender">Gender*</lable>
+		<input type="radio" id="gender_m" name=gender required>
+		<lable for="gender_m">Male</lable>
+		<input type="radio" id="#gender_f" name =gender required >
+		<lable for="gender_f">Female</lable>
 		
-			<lable for="gender">Gender*</lable>
-			<input type="radio" id="gender_m" name=gender required>
-			<lable for="gender_m">Male</lable>
-			<input type="radio" id="#gender_f" name =gender required >
-			<lable for="gender_f">Female</lable>
+		<lable for="cars">Car Brands*</lable>
+		<select id="cars" required>
+			<option value="" disabled selected>--Please choose an option--</option>
+            <option value="bmw" >BMW</option>
+            <option value="audi">Audi</option>
+            <option value="mercedez">Mercedez</option>
+        </select>
 		
-			<lable for="cars">Car Brands*</lable>
-			<select id="cars" required>
-				<option value="" disabled selected>--Please choose an option--</option>
-                <option value="bmw" >BMW</option>
-                <option value="audi">Audi</option>
-                <option value="mercedez">Mercedez</option>
-            </select>
+		<lable for="age">Age*</lable>
+		<input type="number" id="age" placeholder="age" required>
 		
-			<lable for="age">Age*</lable>
-			<input type="number" id="age" placeholder="age" required>
+		<lable for="dob">DOB*</lable>
+		<input type="date" id="dob" required>
 		
-			<lable for="dob">DOB*</lable>
-			<input type="date" id="dob" required>
+		<lable for="tel">Phone Number</lable>
+		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
 		
-			<lable for="tel">Phone Number</lable>
-			<input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
+		<lable for="password">Password*</lable>
+		<input type="password" id="password" placeholder="Password" required>
 		
-			<lable for="password">Password*</lable>
-			<input type="password" id="password" placeholder="Password" required>
+		<input type="checkbox" required id="tos">
+		<label for="tos">I agree to the TOS</label>
 		
-			<input type="checkbox" required id="tos">
-			<label for="tos">I agree to the TOS</label>
-		
-			<button type="submit">submit</button>
+		<button type="submit">submit</button>
 		
 	</form>
     <script type="text/javascript" src="./script.js">
