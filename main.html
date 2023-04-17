@@ -11,47 +11,47 @@
 	<form method="post">
 		<div>
 			<lable for="name">Name*</lable><br>
-			<input type="text" placeholder="Name" id="#name" required>
+			<input id="#name" type="text" placeholder="Name" required>
 		</div>
 		<div>
 			<lable for="email">Email*</lable><br>
-			<input type="email" placeholder="Email" id="#email" required>
+			<input id="#email" type="email" placeholder="Email" required>
 		</div>
 		<div>
 			<lable for="gender">Gender*</lable><br>
-			Male:<input type="radio" name=gender id="#gender_m"><br>
-			Female:<input type="radio" name =gender id="#gender_f" >
+			Male:<input id="#gender_m" type="radio" name=gender required><br>
+			Female:<input id="#gender_f" type="radio" name =gender required >
 		</div>
 		<div>
-			<lable for="options">Car Brands*</lable><br>
+			<lable for="cars">Car Brands*</lable><br>
 			<select id="#cars" placeholder="--Please choose an option--">
-                <option value="BMW">BMW</option>
-                <option value="Audi">Audi</option>
-                <option value="Mercedez">Mercedez</option>
+                <option value="BMW" aria-required>BMW</option>
+                <option value="Audi"aria-required>Audi</option>
+                <option value="Mercedez" aria-required>Mercedez</option>
             </select>
 		</div>
 		<div>
-			<lable for="age">Age</lable><br>
-			<input type="number" placeholder="age" id="#age" required>
+			<lable for="age">Age*</lable><br>
+			<input id="#age" type="number" placeholder="age" required>
 		</div>
 		<div>
-			<lable for="DOB">DOB*</lable><br>
-			<input type="date" id="#dob" required>
+			<lable for="dob">DOB*</lable><br>
+			<input id="#dob" type="date" required>
 		</div>
 		<div>
 			<lable for="phone">Phone Number</lable><br>
-			<input type="tel" id="#tel"  placeholder="xxx-xxx-xxxx"required>
+			<input id="#tel" type="tel" placeholder="xxx-xxx-xxxx"required>
 		</div>
 		<div>
 			<lable for="password">Password*</lable><br>
-			<input type="password" id="#password" required>
+			<input id="#password" type="password" required>
 		</div>
 		<div>
-			<lable for="checkbox"></lable><br>
-			<input type="checkbox" id="#tos" required>I agree to the TOS.
+			<lable for="tos"></lable><br>
+			<input id="#tos" type="checkbox" required>I agree to the TOS.
 		</div>
 		<div>
-			<input type="button" value="Submit">
+			<input type="submit" value="Submit">
 		</div>
     <script type="text/javascript" src="./script.js">
 </script>
